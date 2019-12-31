@@ -1,0 +1,11 @@
+e2e/
+node_modules/
+.editorconfig
+package-lock.json
+README.md
+tsconfig*
+tslint.json
+src/environments/
+src/favicon.ico
+src/polyfills.ts
+src/test.ts
