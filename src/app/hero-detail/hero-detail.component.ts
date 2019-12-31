@@ -11,7 +11,7 @@ import { Hero } from '../hero';
   styleUrls: ['./hero-detail.component.css']
 })
 export class HeroDetailComponent implements OnInit {
-  @Input()hero: Hero;
+  @Input()hero: Hero;  //The input decorator isn't used in this case because this hero property is being modified in the getHero() method.  The input decorator is used when a parent component uses this: <app-hero-detail hero=some value here></app-hero-detail>.  If the variable in this class is hero, but I want the attribute in the tag to be "callMe" for example, the decorator had to be like this: @Input('callMe') hero: Hero;.
 
   constructor(private route: ActivatedRoute,
     private heroService: HeroService,
